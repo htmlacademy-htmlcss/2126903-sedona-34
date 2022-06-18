@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ptsans-400.woff2) format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ptsans-700.woff2) format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    background-color: #fff;
+}
+.navigation-list {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.page-main-section {
+    background-image: url(../images/main-mountens.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 485px;
+}
+
+.section-info {
+    font-size: 18px;
+    line-height: 21px;
+
+}
+.section-info-title-cards {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.section-info-list-item {
+    background-color: #83B3D31F;
+}
+.color-darkblue {
+   background-color: #82B3D3;
+   color: #fff;
+}
+.section-offer {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.footer-number {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.catalog-filter-group {
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.catalog-products {
+    background-image: url(../images/section-blure-catalog.jpg);
+    background-repeat: no-repeat;
+    width: 1200px ;
+    height: 403px ;
+}
+
+.section-cards-title {
+    font-weight: 700;
+    font-size: 30px;
+    line height: 36px;
+}
+
+.product-card-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
