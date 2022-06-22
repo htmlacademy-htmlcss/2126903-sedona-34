@@ -7,8 +7,8 @@
   </head>
   <body>
       <header class="page-header">
-        <img src="images/icons/header-logo.svg" width="139" height="70" alt="logo">
         <nav class="main-novigation">
+          <img class="header-logo" src="images/icons/header-logo.svg" width="139" height="70" alt="logo">
           <ul class="navigation-list">
             <li class="novigation-item">
               <a href="#">Главная</a>
@@ -20,7 +20,7 @@
               <a href="#">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list">
+          <ul class="navigation-list  navigation-user">
             <li class="novigation-icon">
               <a href="#">Поиск</a>
             </li>
@@ -35,24 +35,23 @@
       </header>
 
       <main class="main-inner">
+        <div class="main-filter">
             <header class="inner-header">
                     <h1 class="inner-header-title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item">
-                        <a href="index.html"><img src="images/icons/Union.svg" width="12" height="11" alt="Иконка"> </a>
+                        <a href="index.html"></a>
                     </li>
                     <li class="breadcrumbs-item">
-                        <a href="#"><img src="images/icons/strelka.svg" width="5" height="7" alt="Иконка"></a>
+                        <a href="#"></a>
                     </li>
                     <li class="breadcrumbs-item">
                         <a href="#">Гостиницы</a>
                     </li>
                 </ul>
             </header>
-            <section class="catalog-products">
+            <section class="catalog-product">
                     <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-
-
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура</legend>
                     <ul class="catalog-filter-list">
@@ -102,8 +101,10 @@
                     <button class="button" type="submit">Применить</button>
                     <button class="button" type="submit">Сбросить</button>
                 </form>
+          </div>
             </section>
             <section class="section-cards">
+              <div class="filter-container">
                 <p class="section-cards-title">Найдено страниц: 38</p>
                 <select class="select-control" aria-label="Сортировка">
                     <option value="popular">Сначала популярное</option>
@@ -123,6 +124,7 @@
                     <img src="images/icons/icon-list.svg" width="16" height="14"  alt="">
                     <span class="visually-hidden">Показать ...</span>
                   </a>
+              </div>
             </section>
             <section class="product-card">
                 <ul class="product-card-list">
@@ -203,18 +205,17 @@
                 </ul>
                 <p>Гостиниц на странице:</p>
             </section>
+            <aside class="main-inner-aside">
+              <span class="offer">Подпишитесь на рассылку</span>
+              <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+              <form action="#">
+                <input type="text" name="email" placeholder="Ваш e-mail">
+                <button class="button">Подписаться</button>
+              </form>
+            </aside>
       </main>
 
-      <aside>
-        <span class="section-offer">Подпишитесь на рассылку</span>
-        <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
-        <form action="#">
-          <input type="text" name="email" placeholder="Ваш e-mail">
-          <button class="button">Подписаться</button>
-        </form>
-      </aside>
-
-      <footer clas="main-footer">
+      <footer class="main-footer">
         <h3 class="visually-hidden">Контакты</h3>
         <ul class="footer-contacts">
           <li class="footer-items">

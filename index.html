@@ -7,8 +7,8 @@
   </head>
   <body>
     <header class="page-header">
-      <img src="images/icons/header-logo.svg" width="139" height="70" alt="logo">
       <nav class="main-novigation">
+        <img class="header-logo" src="images/icons/header-logo.svg" width="139" height="70" alt="logo">
         <ul class="navigation-list">
           <li class="novigation-item">
             <a href="#">Главная</a>
@@ -20,7 +20,7 @@
             <a href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list">
+        <ul class="navigation-list  navigation-user">
           <li class="novigation-icon">
             <a href="#">Поиск</a>
           </li>
@@ -35,83 +35,87 @@
     </header>
 
     <main class="page-main">
-      <section class="page-main-section">
-      <img src="images/icons/welcome-main-h1.svg" width="456" height="212"  alt="Наименование компании">
-      </section>
-      <h1 class="main-title">Седона — небольшой городок в Аризоне,<br>
-        заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        <section class="section-info">
-          <h2 class="visually-hidden">Информация о городе</h2>
-          <ul class="section-info-list">
-            <li class="section-info-list-item color-darkblue">
-              <span class="section-info-title-cards">Настоящий <br>городок</span>
-              <p>— №1 —</p>
-              <p>Седона — не аттракцион для <br> туристов, там течёт своя <br> жизнь</p>
-            </li>
-            <li>
-              <img src="images/section-hous.jpg" width="800" height="384" alt="Дом в городе Седона">
-            </li>
-
-            <li class="section-info-list-item">
-              <img src="images/icons/Vector-hous-icon.svg" width="75" height="72" alt="Дом">
-              <span class="section-info-title-cards">Жильё</span>
-              <p>Рекомендуем пожить <br> в настоящем мотеле,<br> всё как в кино!</p>
-            </li>
-            <li>
-              <img src="images/icons/food.svg" width="75" height="72" alt="Дом">
-              <span class="section-info-title-cards">Еда</span>
-              <p>Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!</p>
-            </li>
-            <li class="section-info-list-item">
-              <img src="images/icons/present-icon.svg" width="75" height="72" alt="Подарок">
-              <span class="section-info-title-cards">Сувениры</span>
-              <p>Не только китайского, <br> но и настоящего местного производства!</p>
-            </li>
-
-            <li>
-              <img src="images/section-mountans.jpg"  alt="Скалы">
-            </li>
-            <li class="section-info-list-item color-darkblue">
-              <span class="section-info-title-cards">Там есть <br> мост дьявола</span>
-              <p>— №2 —</p>
-              <p>Да, по нему можно пройти! <br> Если вы осмелитесь, <br> разумеется</p>
-            </li>
-
-            <li>
-              <span class="section-info-title-cards">Небольшая <br> площадь</span>
-              <p>— №3 —</p>
-              <p>Все достопримечательности <br> находятся очень близко</p>
-            </li>
-            <li class="section-info-list-item">
-              <span class="section-info-title-cards">Красивая <br> дорога</span>
-              <p>— №4 —</p>
-              <p>Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p>
-            </li>
-            <li>
-              <span class="section-info-title-cards">Мало <br> туристов</span>
-              <p>— №5 —</p>
-              <p>Большинство едет в Гранд <br> Каньон и толпится там</p>
-            </li>
-          </ul>
+      <div class="page-container" >
+        <section class="page-main-section">
+        <img class="page-main-title" src="images/icons/welcome-main-h1.svg" width="458" height="352"  alt="Наименование компании">
         </section>
-        <section class="offer">
-          <h2 class="visually-hidden">Предложение гостиниц</h2>
-          <span class="section-offer">Заинтересовались?</span>
-          <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#" class="button">Поиск гостиниц в Сеодне</a>
-        </section>
-        <aside class="main-aside">
-          <span class="section-offer">Подпишитесь на рассылку</span>
-          <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
-          <form action="#">
-            <input type="text" name="email" placeholder="Ваш e-mail">
-            <button class="button">Подписаться</button>
-          </form>
-        </aside>
+          <div class="main-title-container">
+            <h1 class="main-title">Седона — небольшой городок в Аризоне,<br>
+              заслуживающий большего!</h1>
+              <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
+          <section class="section-info">
+            <h2 class="visually-hidden">Информация о городе</h2>
+            <ul class="section-info-list">
+              <li class="section-info-list-item color-darkblue">
+                <span class="section-info-title-cards">Настоящий <br>городок</span>
+                <p>— №1 —</p>
+                <p>Седона — не аттракцион для <br> туристов, там течёт своя <br> жизнь</p>
+              </li>
+              <li >
+                <img src="images/section-hous.jpg" width="800" height="384" alt="Дом в городе Седона">
+              </li>
+
+              <li class="section-info-list-item">
+                <img src="images/icons/Vector-hous-icon.svg" width="75" height="72" alt="Дом">
+                <span class="section-info-title-cards">Жильё</span>
+                <p>Рекомендуем пожить <br> в настоящем мотеле,<br> всё как в кино!</p>
+              </li>
+              <li class="section-info-item-white">
+                <img src="images/icons/food.svg" width="75" height="72" alt="Дом">
+                <span class="section-info-title-cards">Еда</span>
+                <p>Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!</p>
+              </li>
+              <li class="section-info-list-item">
+                <img src="images/icons/present-icon.svg" width="75" height="72" alt="Подарок">
+                <span class="section-info-title-cards">Сувениры</span>
+                <p>Не только китайского, <br> но и настоящего местного производства!</p>
+              </li>
+
+              <li >
+                <img src="images/section-mountans.jpg" width="800" height="384" alt="Скалы">
+              </li>
+              <li class="section-info-list-item color-darkblue">
+                <span class="section-info-title-cards">Там есть <br> мост дьявола</span>
+                <p>— №2 —</p>
+                <p>Да, по нему можно пройти! <br> Если вы осмелитесь, <br> разумеется</p>
+              </li>
+
+              <li class="section-info-item-white">
+                <span class="section-info-title-cards">Небольшая <br> площадь</span>
+                <p>— №3 —</p>
+                <p>Все достопримечательности <br> находятся очень близко</p>
+              </li>
+              <li class="section-info-list-item">
+                <span class="section-info-title-cards">Красивая <br> дорога</span>
+                <p>— №4 —</p>
+                <p>Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p>
+              </li>
+              <li class="section-info-item-white">
+                <span class="section-info-title-cards">Мало <br> туристов</span>
+                <p>— №5 —</p>
+                <p>Большинство едет в Гранд <br> Каньон и толпится там</p>
+              </li>
+            </ul>
+          </section>
+          <section class="section-offer">
+            <h2 class="visually-hidden">Предложение гостиниц</h2>
+            <span class="offer">Заинтересовались?</span>
+            <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a href="#" class="button">Поиск гостиниц в Сеодне</a>
+          </section>
+          <aside class="main-aside">
+            <span class="offer">Подпишитесь на рассылку</span>
+            <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+            <form action="#">
+              <input type="text" name="email" placeholder="Ваш e-mail">
+              <button class="button">Подписаться</button>
+            </form>
+          </aside>
+      </div>
     </main>
 
-    <footer clas="main-footer">
+    <footer class="main-footer">
       <h3 class="visually-hidden">Контакты</h3>
       <ul class="footer-contacts">
         <li class="footer-items">
