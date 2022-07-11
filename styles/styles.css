@@ -106,8 +106,6 @@ body {
     height: 2px;
     background-color: #756257;
     content: "";
-    width: 68px;
-
   }
 .header-logo {
     margin-left: 70px;
@@ -270,7 +268,18 @@ body {
 .footer-logo {
     margin-right: 72px;
 }
-
+.footer-logo path {
+    fill: #000;
+}
+.footer-logo-link:hover path {
+    fill: #756157;
+}
+.footer-logo-link:focus path {
+    fill: #756157;
+}
+.footer-logo-link:active path {
+    fill: rgba(117, 97, 87, 0.3);
+}
 .button {
     padding: 9px 15px;
     font-weight: 700;
@@ -579,3 +588,12 @@ body {
     font-size: 20px;
     line-height: 26px;
 }
+.navigation-link-current::before {
+    position: absolute;
+    right: 17px;
+    bottom: 0;
+    left: 17px;
+    height: 2px;
+    background-color:#756257;
+    content: "";
+  }
