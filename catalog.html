@@ -74,17 +74,20 @@
                             <ul class="catalog-filter-list">
                                     <li class="catalog-filter-item">
                                         <label class="control">
-                                        <input class="control-input" type="checkbox" name="Бассейн" checked>Бассейн
+                                        <input class="visually-hidden control-input" type="checkbox" name="Бассейн" checked>Бассейн
+                                        <span class="control-mark"></span>
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control">
-                                        <input class="control-input" type="checkbox" name="Парковка" checked>Парковка
+                                        <input class="visually-hidden control-input" type="checkbox" name="Парковка" checked>Парковка
+                                        <span class="control-mark"></span>
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control">
-                                        <input class="control-input" type="checkbox" name="WI-FI">WI-FI
+                                        <input class="visually-hidden control-input" type="checkbox" name="WI-FI">WI-FI
+                                        <span class="control-mark"></span>
                                         </label>
                                     </li>
                             </ul>
@@ -112,6 +115,33 @@
                                 </li>
                             </ul>
                         </fieldset>
+
+                        <fieldset class="catalog-filter-group">
+                          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                        <div class="range">
+                          <div class="range-wrapper-inputs">
+                            <label class="catalog-filter-label">
+                              <input class="range-input" type="number" value="0" name="min-price" style="width: 144px">от
+                            </label>
+                            <label class="catalog-filter-label">
+                               <input class="range-input" type="number" value="9000" name="max-price" style="width: 144px">до
+                            </label>
+                          </div>
+                          <div class="range">
+                            <div class="range-scale">
+                              <div class="range-bar" style="left: 42px; width: 228px">
+                                <button class="range-toggle toggle-min">
+                                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                                </button>
+                                <button class="range-toggle toggle-max">
+                                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                        </fieldset>
+
+
                         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                             <button class="button" type="submit">Применить</button>
                             <button class="button" type="submit">Сбросить</button>
@@ -176,7 +206,7 @@
                         </a>
                         <p class="text-card" >Гостиница</p>
                         <b class="product-card-price">От 2500 ₽</b>
-                            <a href="#" class="product-card-button-brown button navigation-link-button">Подробнее</a>
+                            <a href="#" class="product-card-button-brown button">Подробнее</a>
                             <a href="#" class="product-card-button-blue button">В избранное</a>
                             <img src="#" alt="Звезды">
                             <a href="#" class="product-card-button-grey button">Рейтинг: 6,9</a>

@@ -460,7 +460,6 @@ body {
 }
 .catalog-product {
     display: flex;
-    justify-content: space-between;
 }
 .filter-container{
     display: flex;
@@ -628,6 +627,7 @@ body {
     color: #fff;
     font-size: 18px;
     line-height: 21px;
+    border: none;
 }
 
 .catalog-products {
@@ -654,8 +654,10 @@ body {
     margin-right: 70px;
     margin-left: 51px;
     width: 160px;
+    height: 49px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
 .product-card-title {
     color: #000000;
     font-weight: 700px;
@@ -669,6 +671,7 @@ body {
     font-weight: 700px;
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 30px;
 }
 .navigation-link-current::before {
     position: absolute;
@@ -685,3 +688,104 @@ body {
     font-size: 18px;
     line-height: 21px;
 }
+
+/* Фильтр попап*/
+.range-wrapper-inputs {
+    display: flex;
+    margin-bottom: 28px;
+}
+.range  {
+    width: 288px;
+}
+.range-scale {
+    position: relative;
+    height: 4px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 0.3;
+    border-radius: 2px;
+    width: 268px;
+}
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+.range-input {
+    padding: 14px 84px 14px 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    width: 144px;
+    font: inherit;
+    background-color: transparent;
+    appearance: textfield;
+    color: #fff;
+}
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+  }
+.toggle-min {
+    top: -8px;
+    left: -42px;
+}
+.toggle-max {
+    top: -8px;
+    right: 40px;
+}
+
+.range-wrapper-inputs {
+    display: flex;
+  }
+
+.catalog-filter-label {
+    display: flex;
+    margin-right: 5px;
+  }
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+/*group*/
+.catalog-filter-group {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    border: none;
+  }
+/* Control */
+.control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+  }
+
+  /* Mark */
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    background-image: url(../images/icons/galka\ for\ filtr.svg);
+    background-repeat: no-repeat;
+}
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+.catalog-filter-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
