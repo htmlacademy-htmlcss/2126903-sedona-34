@@ -813,7 +813,7 @@ body {
   }
 
 .modal-auth {
-    width: 715px;
+    width: 575px;
   }
 .modal-close-button {
     position: absolute;
@@ -863,11 +863,158 @@ body {
     background: #F2F2F2;
     border-radius: 4px;
     border: none;
-    padding-left: 19px;
 
+}
+.for-button-relative {
+    position: relative;
 }
 .date-button {
     position: absolute;
     width: 15px;
     height: 15px;
+    right: 20px;
+    top: 19px;
+    cursor: pointer;
+    border: none;
+}
+.date-button::before{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background-image: url(../images/icons/kalendar.svg);
+    width: 15px;
+    height: 15px;
+    content: "";
+}
+.field-box {
+    position: relative;
+    display: block;
+    width: 133px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+}
+.fiels-box-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+}
+.minus {
+    top: 18px;
+    left: 19px;
+}
+.minus::after {
+    background-image: url("../images/icons/minus.svg");
+    position: absolute;
+    top: 4;
+    right: 0;
+    display: block;
+    width: 13px;
+    height: 1px;
+    content: "";
+}
+.plus {
+    top: 18px;
+    right: 19px;
+}
+.plus::after {
+    background-image: url("../images/icons/plus.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 13px;
+    height: 13px;
+    content: "";
+}
+.field-button {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: none;
+    cursor: pointer;
+}
+.modal-stok {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.modal-text {
+    padding: 0;
+    margin: 0;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 152px;
+
+}
+.field-number {
+    margin: 15px 63px 15px 60px;
+    width: 25px;
+    height: 21px;
+    appearance: none;
+    border: none;
+    background: #F2F2F2;
+    font-size: 18px;
+    line-height: 21px;
+}
+.error {
+    color: #FF5757;
+}
+.arrival-date {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+.label-field{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin-right: 60px;
+}
+.field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.field-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.child {
+    margin-right: 43px;
+    position: relative;
+}
+.child::after {
+    position: absolute;
+    top: 2px;
+    right: -28px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #83B3D3;
+    content: "";
+}
+.button-child {
+    position: absolute;
+    top: 18px;
+    right: 153px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #83B3D3;
+    border: none;
+    color: #fff;
+}
+
+/*Открывает форму*/
+
+.none {
+    display: none;
 }
