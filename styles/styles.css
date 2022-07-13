@@ -93,7 +93,7 @@ body {
 
 }
 .aside-button {
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     min-width: 200px;
     padding: 12px 15px;
     background-color: #82B3D3;
@@ -711,6 +711,8 @@ body {
     height: 4px;
     background-color: #fff;
     border-radius: 4px;
+    left: 42px;
+    width: 228px;
   }
 .range-input {
     padding: 14px 84px 14px 20px;
