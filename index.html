@@ -165,5 +165,60 @@
           </svg>
         </a>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+        <form class="modal-content" action="" method="post">
+          <div class="modal-stok">
+            <label class="arrival-date" for="arrival">Дата заезда:</label>
+            <input class="text-input" id="diparture" placeholder="27 апреля 2020">
+            <button class="date-button " type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+            <p>Мы не можем отправить вас в прошлое.</p>
+          </div>
+          <div class="modal-stok">
+            <label class="arrival-date" for="arrival">Дата выезда:</label>
+            <input class="text-input" id="diparture" placeholder="1 сентября 2021">
+            <button class="date-button" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+            <p>На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+
+          <div class="field">
+            <label class="label-field" for="adult">Взрослые:</label>
+              <span class="field-box">
+                <button class="field-button minus" type="button">
+                  <span class="visually-hidden">Минус</span>
+                </button>
+                <button class="field-button plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
+                </button>
+              </span>
+          </div>
+
+          <div class="field">
+            <label class="label-field" for="child">Дети:</label>
+              <span class="field-box">
+                <button class="field-button minus" type="button">
+                  <span class="visually-hidden">Минус</span>
+                </button>
+                <button class="field-button plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
+                </button>
+                <span>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+          </div>
+          <button class="back-button" type="button">Назад</button>
+        </form>
+
+      </div>
+    </div>
   </body>
 </html>

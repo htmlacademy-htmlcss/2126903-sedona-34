@@ -778,6 +778,7 @@ body {
     background: #FFFFFF;
     border-radius: 4px;
     background-image: url(../images/icons/galka\ for\ filtr.svg);
+    background-position: center;
     background-repeat: no-repeat;
 }
 .catalog-filter-list {
@@ -789,3 +790,84 @@ body {
 .catalog-filter-item:not(:last-child) {
     margin-bottom: 15px;
   }
+
+/* Модальное окно*/
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+    z-index: 2;
+  }
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 62px 70px 70px 70px;
+    background-color: #ffffff;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+  }
+
+.modal-auth {
+    width: 715px;
+  }
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 54px;
+    right: 70px;
+    width: 53px;
+    height: 53px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 50%;
+    background-image: url("../images/icons/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+.modal-title {
+    margin: 0;
+    margin-bottom: 63px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.back-button {
+    width: 575px;
+    height: 65px;
+    padding: 12px 26px;
+    background: #83B3D3;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text-input {
+    position: relative;
+    width: 420px;
+    height: 50px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    border: none;
+    padding-left: 19px;
+
+}
+.date-button {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
