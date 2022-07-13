@@ -165,5 +165,68 @@
           </svg>
         </a>
     </footer>
+    <div class="modal-container none">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+        <form class="modal-content" action="" method="post">
+          <div class="modal-stok">
+              <label class="arrival-date" for="arrival">Дата заезда:</label>
+                <div class="for-button-relative">
+                  <input class="text-input" id="diparture" placeholder="27 апреля 2020">
+                  <button class="date-button" type="button">
+                    <span class="visually-hidden">Календарь</span>
+                  </button>
+                </div>
+            <p class="modal-text error" >Мы не можем отправить вас в прошлое.</p>
+          </div>
+          <div class="modal-stok">
+            <label class="arrival-date" for="arrival">Дата выезда:</label>
+              <div class="for-button-relative" >
+                <input class="text-input" id="diparture" placeholder="1 сентября 2021">
+                <button class="date-button" type="button">
+                  <span class="visually-hidden">Календарь</span>
+                </button>
+              </div>
+            <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+        <div class="field-flex" >
+          <div class="field">
+            <label class="label-field" for="adult">Взрослые:</label>
+              <span class="field-box">
+                <button class="field-button minus" type="button">
+                  <span class="visually-hidden">Минус</span>
+                </button>
+                <input class="field-number" name="adult" type="number" value="2">
+                <button class="field-button plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
+                </button>
+              </span>
+          </div>
+
+          <div class="field">
+            <label class="label-field child" for="child">Дети:</label>
+              <button class="button-child" type="button">i</button>
+              <span class="field-box">
+                <button class="field-button minus" type="button">
+                  <span class="visually-hidden">Минус</span>
+                </button>
+                <input class="field-number" name="adult" type="number" value="1">
+                <button class="field-button plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
+                </button>
+              </span>
+          </div>
+          <span>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+        </div>
+          <button class="back-button" type="button">Назад</button>
+        </form>
+
+      </div>
+    </div>
   </body>
 </html>
