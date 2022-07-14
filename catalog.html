@@ -7,6 +7,7 @@
     <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
       <link rel="stylesheet" href="styles/styles.css">
+      <link class="favicon" rel="icon" href="images/icons/favicon e.svg." type="image/x-icon">
   </head>
     <body>
       <header class="page-header">
@@ -50,14 +51,15 @@
                     <header class="inner-header">
                             <h1 class="inner-header-title">Гостиницы Седоны</h1>
                         <ul class="breadcrumbs">
-                            <li class="breadcrumbs-item hous">
-                                <a href="index.html"></a>
-                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z" fill="white"/>
-                                  </svg>
+                            <li class="breadcrumbs-item">
+                                <a class="hous" href="index.html">
+                                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z" fill="white"/>
+                                    </svg>
+                                </a>
                             </li>
                             <li class="breadcrumbs-item">
-                                <a class="arrow" href="#"></a>
+                                <a class="arrow" href="#" alt="Стрелка"></a>
                             </li>
                             <li class="breadcrumbs-item">
                                 <a class="breadcrumbs-item-link" href="#">Гостиницы</a>
@@ -126,7 +128,7 @@
                           </div>
                           <div class="range">
                             <div class="range-scale">
-                              <div class="range-bar" style="left: 42px; width: 228px">
+                              <div class="range-bar">
                                 <button class="range-toggle toggle-min">
                                   <span class="visually-hidden">Изменить минимальную цену.</span>
                                 </button>
@@ -137,7 +139,6 @@
                             </div>
                         </div>
                         </fieldset>
-
 
                         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                             <button class="button" type="submit">Применить</button>
@@ -155,16 +156,13 @@
                     <option value="expensive">Сначала дорогое</option>
                   </select>
                 <div class="filter-icon" >
-                  <a href="#" class="filter-button">
-                    <img src="images/icons/icon-table.svg" width="16" height="14"  alt="">
+                  <a href="#" class="filter-button table">
                     <span class="visually-hidden">Показать список</span>
                   </a>
-                  <a class="filter-button" href="#">
-                    <img src="images/icons/icon-slideshow.svg" width="16" height="14"  alt="">
+                  <a class="filter-button slideshow" href="#">
                     <span class="visually-hidden">Показать карточки</span>
                   </a>
-                  <a class="filter-button" href="#">
-                    <img src="images/icons/icon-list.svg" width="16" height="14"  alt="">
+                  <a class="filter-button list" href="#">
                     <span class="visually-hidden">Показать ...</span>
                   </a>
                 </div>
@@ -224,7 +222,7 @@
                 <div class="pagination-container">
                     <ul class="pagination">
                         <li class="pagination-item">
-                            <a class="pagination-link pagination-checked" href="#">1</a>
+                            <a class="pagination-checked" href="#">1</a>
                             <span class="visually-hidden">Следующая страница</span>
                         </li>
                         <li class="pagination-item">
@@ -252,11 +250,11 @@
             </section>
             <aside class="main-inner-aside">
               <span class="offer">Подпишитесь на рассылку</span>
-              <p class="">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
-              <form class="action-form" action="#">
-                <input type="text" name="email" placeholder="Ваш e-mail">
-                <button class="button">Подписаться</button>
-              </form>
+              <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+                <form class="action-form" action="#">
+                  <input class="email" required type="email" name="email" placeholder="Ваш e-mail">
+                  <button class="aside-button">Подписаться</button>
+                </form>
             </aside>
       </main>
       <footer class="main-footer">
