@@ -236,6 +236,7 @@ body {
 .page-main-section {
     background-image: url(../images/main-mountens.jpg);
     background-repeat: no-repeat;
+    background-color: #68A2CA;
     width: 1200px;
     height: 485px;
     margin-bottom: 63px;
@@ -637,8 +638,8 @@ body {
 }
 
 .main-filter {
-    background-color: #E5E5E5;
     background-image: url(../images/section-blure-catalog.jpg);
+    background-color:#3F5E72;
     height: 403px;
     background-repeat: no-repeat;
 }
@@ -686,10 +687,21 @@ body {
 }
 
 .pagination-container{
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin: 100px 0 0 73px ;
     padding: 0;
+}
+
+.pagination-container::before {
+    position: absolute;
+    display: block;
+    width: 1055px;
+    height: 1px;
+    margin-top: -30px;
+    background-color: rgba(230, 230, 230, 1);
+    content: "";
 }
 
 .product-img {
@@ -878,15 +890,22 @@ body {
 
 .select-control {
     position: relative;
+    background-image: url(../images/icons/arow-under.svg);
+    background-repeat: no-repeat;
+    background-position: 256px 19px;
     appearance: none;
     display: block;
-    margin-right: 70px;
+    border: 2px solid #E5E5E5;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 76px;
     margin-left: 51px;
-    width: 270px;
+    width: 290px;
     height: 49px;
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 20px;
+    border-radius: 4px;
 }
 
 .select-control:hover {
@@ -971,9 +990,18 @@ body {
 }
 
 .select-control-pagination {
+    background-image: url(../images/icons/arow-under.svg);
+    background-repeat: no-repeat;
+    background-position: 127px 19px;
+    appearance: none;
+    display: block;
+    border: 2px solid #E5E5E5;
     width: 160px;
     height: 49px;
     margin-right: 71px;
+    margin-top: 4px;
+    border-radius: 4px;
+    padding-left: 20px;
 }
 
 .select-control-pagination:hover {
@@ -1243,7 +1271,7 @@ body {
 }
 
 .button-reset:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .button-reset:active {
