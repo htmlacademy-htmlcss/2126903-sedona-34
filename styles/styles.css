@@ -302,8 +302,8 @@ body {
 }
 
 .aside-offer {
-   padding-bottom: 92px;
    padding-top: 92px;
+   padding-bottom: 92px;
 }
 
 .action-form {
@@ -321,8 +321,9 @@ body {
 .main-aside {
     text-align: center;
     background-image: url(../images/background-blure-mountans.png);
+    background-repeat: no-repeat;
+    background-color: #3F5E72;
     width: 1200px;
-    height: 411px;
     color: #fff;
 }
 
@@ -345,12 +346,18 @@ body {
 
 .section-info-list-item {
     width: 400px;
-    height: 384px;
 }
 
 .section-info-item-white {
     width: 400px;
-    height: 384px;
+}
+
+.centr {
+    padding-bottom: 60px;
+}
+
+.under {
+    padding-bottom: 85px;
 }
 
 .main-footer {
@@ -380,6 +387,7 @@ body {
     width: 230px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 0;
 }
 
 .section-info-img {
@@ -550,13 +558,13 @@ body {
 
 .catalog-filter-container {
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
 }
 
 .catalog-filter-button {
     display: flex;
     flex-direction: column;
-    margin-left: 70px;
+    margin-left: 65px;
 
 }
 
@@ -760,11 +768,12 @@ body {
 }
 
 .inner-header-title {
-    margin-bottom: 10px;
+    display: block;
     color: #fff;
     font-size: 60px;
     line-height: 78px;
     margin: 0;
+    margin-bottom: 6px;
     padding: 0;
 }
 
@@ -806,11 +815,11 @@ body {
 
 .hous {
     display: block;
-    margin-top: 2px;
+    margin-top: 1px;
 }
 
 .inner-header {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .main-inner-aside {
@@ -822,6 +831,15 @@ body {
     font-size: 18px;
     line-height: 21px;
     border: none;
+    margin-right: 70px;
+}
+
+.filter-box {
+    margin-right: 70px;
+}
+
+.filter-box-second {
+    margin-right: 180px;
 }
 
 .catalog-filter-group-prise {
@@ -861,6 +879,19 @@ body {
     padding-left: 20px;
 }
 
+.select-control:hover {
+    border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+    border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+    border: 2px solid #3F5E72;
+
+}
+
 .select-control::after {
     background-image: url(../images/icons/arow-under.svg);
     position: absolute;
@@ -897,12 +928,18 @@ body {
 }
 
 .catalog-filter-title {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     text-transform: capitalize;
 
+}
+
+.catalog-filter-title-prise {
+    margin-bottom: 32px;
 }
 
 .navigation-link-current::before {
@@ -927,6 +964,19 @@ body {
     width: 160px;
     height: 49px;
     margin-right: 71px;
+}
+
+.select-control-pagination:hover {
+    border: 2px solid #68A2CA;
+}
+
+.select-control-pagination:focus {
+    border: 2px solid #68A2CA;
+}
+
+.select-control-pagination:active {
+    border: 2px solid #3F5E72;
+
 }
 
 /* Фильтр попап*/
@@ -966,7 +1016,7 @@ body {
 .range-input {
     position: relative;
     border: 2px solid #FFFFFF;
-    padding: 13px 20px;
+    padding: 12px 18px;
     border-radius: 4px 0 0 4px;
     width: 104px;
     font: inherit;
@@ -990,14 +1040,14 @@ body {
 
 .range-input-placeholder {
     position: absolute;
-    left: 118px;
+    left: 115px;
     top: 13px;
     color: #FFFFFF;
     opacity: 0.3;
 }
 .range-input-placeholder-right {
     position: absolute;
-    right: 14px;
+    right: 24px;
     top: 13px;
     color: #FFFFFF;
     opacity: 0.3;
@@ -1074,6 +1124,11 @@ body {
     padding-left: 36px;
   }
 
+.control-label{
+    display: block;
+    margin-left: 3px;
+}
+
   /* Mark */
 
 .control-mark {
@@ -1139,9 +1194,9 @@ body {
     font-size: 16px;
     line-height: 20px;
     background: #82B3D3;
-    padding: 14px 15px;
+    padding: 14px 30px;
     margin-bottom: 20px;
-    margin-top: 55px;
+    margin-top: 57px;
 }
 
 .button-form:hover {
@@ -1161,8 +1216,8 @@ body {
     background-color: rgba(255, 255, 255, 0);
     color: #fff;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
     text-transform: none;
     display: inline-block;
