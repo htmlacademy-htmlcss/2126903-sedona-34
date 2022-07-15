@@ -407,7 +407,7 @@ body {
 }
 
 .button {
-    padding: 9px 15px;
+    padding: 8px 15px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -556,6 +556,7 @@ body {
 .catalog-filter-button {
     display: flex;
     flex-direction: column;
+    margin-left: 70px;
 
 }
 
@@ -592,8 +593,8 @@ body {
 }
 
 .filter-button {
-    margin-right: 8px;
-    padding: 18px 17px;
+    margin-right: 5px;
+    padding: 16px 15px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
 }
@@ -625,7 +626,7 @@ body {
 }
 
 .main-filter-container {
-    padding: 35px 70px 70px 70px;
+    padding: 35px 71px 70px 71px;
 
 }
 
@@ -669,12 +670,12 @@ body {
 .pagination-container{
     display: flex;
     justify-content: space-between;
-    margin: 85px 0 0 73px ;
+    margin: 100px 0 0 73px ;
     padding: 0;
 }
 
 .product-img {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .text-card {
@@ -821,9 +822,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     border: none;
-    margin-right: 70px;
 }
-
 
 .catalog-filter-group-prise {
     width: 297px;
@@ -855,10 +854,11 @@ body {
     display: block;
     margin-right: 70px;
     margin-left: 51px;
-    width: 160px;
+    width: 270px;
     height: 49px;
     margin-top: auto;
     margin-bottom: auto;
+    padding-left: 20px;
 }
 
 .select-control::after {
@@ -876,6 +876,24 @@ body {
     line-height: 28px;
     margin: 0;
     padding: 0;
+    margin-bottom: -1px;
+}
+
+.star-icon {
+    width: 88px;
+    height: 17px;
+    align-self: center;
+    background-image: url(../images/icons/star.svg);
+    background-repeat: space no-repeat;
+    background-position: 0 center;
+}
+
+.star-icon-three {
+    width: 70px;
+}
+
+.star-icon-two {
+    width: 50px;
 }
 
 .catalog-filter-title {
@@ -902,6 +920,13 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    margin-right: 51px;
+}
+
+.select-control-pagination {
+    width: 160px;
+    height: 49px;
+    margin-right: 71px;
 }
 
 /* Фильтр попап*/
@@ -942,12 +967,25 @@ body {
     position: relative;
     border: 2px solid #FFFFFF;
     padding: 13px 20px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 4px 0 0 4px;
     width: 104px;
     font: inherit;
     background-color: transparent;
     appearance: textfield;
     color: #fff;
+}
+
+.range-input:hover {
+    opacity: 0.6;
+}
+
+.range-input:focus {
+    box-shadow: 0 0 0 3px #81B3D2;
+    outline: 0 0 0 3px #81B3D2; ;
+}
+
+.range-input:focus-visible {
+    background: #756257;
 }
 
 .range-input-placeholder {
@@ -979,6 +1017,21 @@ body {
     border: none;
     background-color: #fff;
 }
+
+.range-toggle:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+    outline: 3px solid #83B3D3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active{
+    outline: 2px solid #83B3D3;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
 
 .toggle-min {
     top: -8px;
@@ -1039,7 +1092,7 @@ body {
 
 .control-input:focus + .control-mark {
     background: rgba(255, 255, 255, 0.6);
-    border: 0 solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .control:active .control-mark {
@@ -1086,7 +1139,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     background: #82B3D3;
-    padding: 15px 15px;
+    padding: 14px 15px;
     margin-bottom: 20px;
     margin-top: 55px;
 }
@@ -1167,6 +1220,13 @@ body {
     width: 575px;
   }
 
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: black;
+}
+
 .modal-close-button {
     position: absolute;
     padding: 0;
@@ -1177,30 +1237,26 @@ body {
     background-color: #F2F2F2;
     border: none;
     border-radius: 50%;
-    background-image: url("../images/icons/close.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     cursor: pointer;
   }
 
 .modal-close-button:hover{
     background: #E6E6E6;
+
 }
 
 .modal-close-button:focus{
     background: #E6E6E6;
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
-.modal-close-button:focus{
-    fill: #000000;
-    opacity: 0.6;
+.modal-close-button:active .close-button  {
+    fill:rgba(0, 0, 0, 0.3);
 }
-
 
 .modal-title {
     margin: 0;
-    margin-bottom: 63px;
+    margin-bottom: 62px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -1242,12 +1298,32 @@ body {
 
 .text-input {
     position: relative;
-    width: 420px;
+    width: 398px;
     height: 50px;
     background: #F2F2F2;
     border-radius: 4px;
     border: none;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding-left: 19px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
+.text-input:hover {
+    background: #E6E6E6;
+}
+
+.text-input:focus {
+    background: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.text-input:active {
+    background: #FFFFFF;
+    outline: 2px solid #000000;
+    color: #000;
 }
 
 .for-button-relative {
@@ -1295,16 +1371,21 @@ body {
     left: 19px;
 }
 
-.minus:hover + .minus-svg {
-    fill: #000000;
-}
-
 .minus-svg {
     display: block;
     text-align: center;
 }
 
-.plus:hover + .plus-svg {
+.minus:hover .minus-svg {
+    fill: #000000;
+}
+
+.plus-svg {
+    display: block;
+    text-align: center;
+}
+
+.plus:hover .plus-svg {
     fill: #000000;
 }
 
@@ -1313,12 +1394,8 @@ body {
     right: 19px;
 }
 
-.plus-svg {
-    display: block;
-    text-align: center;
-}
-
 .field-button {
+    background: #F2F2F2;
     position: absolute;
     width: 15px;
     height: 15px;
@@ -1370,12 +1447,12 @@ body {
 .modal-text {
     padding: 0;
     margin: 0;
-    margin-top: 11px;
-    margin-bottom: 11px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    margin-left: 152px;
+    margin-left: 156px;
 
 }
 
@@ -1398,6 +1475,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+    color: #000000;
 }
 
 .label-field{
@@ -1437,6 +1515,10 @@ body {
     background-color: #83B3D3;
     border: none;
     color: #fff;
+}
+
+.button-child:focus{
+    background: #68A2CA;
 }
 
 /*Открывает форму*/
