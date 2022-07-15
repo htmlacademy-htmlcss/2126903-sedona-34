@@ -166,7 +166,7 @@
           </svg>
         </a>
     </footer>
-    <div class="modal-container none">
+    <div class="modal-container ">
       <div class="modal modal-auth">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -200,10 +200,18 @@
             <label class="label-field" for="adult">Взрослые:</label>
               <span class="field-box">
                 <button class="field-button minus" type="button">
+                  <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
                   <span class="visually-hidden">Минус</span>
                 </button>
                 <input class="field-number" name="adult" type="number" value="2">
                 <button class="field-button plus" type="button">
+                  <svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </g>
+                    </svg>
                   <span class="visually-hidden">Плюс</span>
                 </button>
               </span>
@@ -214,15 +222,26 @@
               <button class="button-child" type="button">i</button>
               <span class="field-box">
                 <button class="field-button minus" type="button">
+                  <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+                  <div class="field-child-age">
+                    <div class="triangel"></div>
+                    <span class="child-age-text ">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </div>
                   <span class="visually-hidden">Минус</span>
                 </button>
                 <input class="field-number" name="adult" type="number" value="1">
                 <button class="field-button plus" type="button">
+                  <svg class="pllus-svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </g>
+                    </svg>
                   <span class="visually-hidden">Плюс</span>
                 </button>
               </span>
           </div>
-          <span>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
         </div>
           <button class="back-button" type="button">Назад</button>
         </form>
