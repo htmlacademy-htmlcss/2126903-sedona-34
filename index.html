@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link class="favicon" rel="icon" href="images/icons/favicon.svg" type="image/x-icon">
+    <link class="favicon" rel="icon" href="images/icons/favicon.svg." type="image/x-icon">
   </head>
   <body>
     <header class="page-header">
@@ -14,13 +14,13 @@
         </a>
         <ul class="navigation-list">
           <li class="novigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current" href="file:///C:/Users/user/Documents/GitHub/2126903-sedona-34/index.html#">Главная</a>
           </li>
           <li class="novigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="novigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="file:///C:/Users/user/Documents/GitHub/2126903-sedona-34/catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list  navigation-user">
@@ -46,7 +46,7 @@
       <div class="page-container" >
         <section class="page-main-section">
           <img class="page-main-title" src="images/icons/welcome-main-h1.svg" width="458" height="352"  alt="Наименование компании">
-          <img class="under-img" src="images/icons/under-img.svg" alt="">
+          <div class="page-under-img"></div>
         </section>
           <div class="main-title-container">
             <h1 class="main-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
@@ -73,7 +73,7 @@
                 <span class="section-info-title-cards title-cards">Еда</span>
                 <p class="section-info-text">Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="section-info-list-item">
+              <li class="section-info-list-item centr">
                 <img class="list-item-icon" src="images/icons/present-icon.svg" width="75" height="72" alt="Подарок">
                 <span class="section-info-title-cards title-cards">Сувениры</span>
                 <p class="section-info-text">Не только китайского, <br> но и настоящего местного производства!</p>
@@ -96,7 +96,7 @@
                 <p>— №4 —</p>
                 <p class="section-info-text">Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p>
               </li>
-              <li class="section-info-item-white">
+              <li class="section-info-item-white under ">
                 <span class="section-info-title-cards bottom">Мало <br> туристов</span>
                 <p>— №5 —</p>
                 <p class="section-info-text">Большинство едет в Гранд <br> Каньон и толпится там</p>
@@ -114,7 +114,7 @@
               <span class="offer">Подпишитесь на рассылку</span>
               <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
                 <form class="action-form" action="#">
-                  <input class="email"  type="email" name="email" placeholder="Ваш e-mail">
+                  <input class="email" required  type="email" name="email" placeholder="Ваш e-mail">
                   <button class="aside-button">Подписаться</button>
                 </form>
            </div>
@@ -169,16 +169,19 @@
     <div class="modal-container none">
       <div class="modal modal-auth">
         <button class="modal-close-button">
+          <svg class="close-button" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
+          </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section>
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         </section>
-        <form class="modal-content" action="" method="post">
+        <form class="modal-content" method="post">
           <div class="modal-stok">
-              <label class="arrival-date" for="arrival">Дата заезда:</label>
+              <label class="arrival-date" for="arrival">Дата Заезда:</label>
                 <div class="for-button-relative">
-                  <input class="text-input" id="diparture" placeholder="27 апреля 2020">
+                  <input class="text-input" id="arrival" placeholder="27 апреля 2020">
                   <button class="date-button" type="button">
                     <span class="visually-hidden">Календарь</span>
                   </button>
@@ -186,7 +189,7 @@
             <p class="modal-text error" >Мы не можем отправить вас в прошлое.</p>
           </div>
           <div class="modal-stok">
-            <label class="arrival-date" for="arrival">Дата выезда:</label>
+            <label class="arrival-date" for="diparture">Дата Выезда:</label>
               <div class="for-button-relative" >
                 <input class="text-input" id="diparture" placeholder="1 сентября 2021">
                 <button class="date-button" type="button">
@@ -197,32 +200,51 @@
           </div>
         <div class="field-flex" >
           <div class="field">
-            <label class="label-field" for="adult">Взрослые:</label>
+            <label class="label-field">Взрослые:</label>
               <span class="field-box">
                 <button class="field-button minus" type="button">
+                  <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                    </svg>
                   <span class="visually-hidden">Минус</span>
                 </button>
                 <input class="field-number" name="adult" type="number" value="2">
                 <button class="field-button plus" type="button">
+                  <svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                    </g>
+                    </svg>
                   <span class="visually-hidden">Плюс</span>
                 </button>
               </span>
           </div>
 
           <div class="field">
-            <label class="label-field child" for="child">Дети:</label>
+            <label class="label-field child">Дети:</label>
               <button class="button-child" type="button">i</button>
               <span class="field-box">
                 <button class="field-button minus" type="button">
+                  <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
                   <span class="visually-hidden">Минус</span>
                 </button>
                 <input class="field-number" name="adult" type="number" value="1">
                 <button class="field-button plus" type="button">
+                  <svg class="pllus-svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </g>
+                    </svg>
                   <span class="visually-hidden">Плюс</span>
                 </button>
               </span>
+              <div class="field-child-age">
+                <div class="triangel"></div>
+                <span class="child-age-text ">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </div>
           </div>
-          <span>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
         </div>
           <button class="back-button" type="button">Назад</button>
         </form>
