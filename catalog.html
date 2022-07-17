@@ -68,7 +68,7 @@
                           </header>
                         <section class="catalog-product">
                                     <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-                                  <div class="catalog-filter-container">
+                                    <form class="catalog-filter-container" action="https://echo.htmlacademy.ru/" method="post">
                                       <div class="filter-box">
                                         <fieldset class="catalog-filter-group">
                                             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -105,21 +105,21 @@
                                                     <label class="control">
                                                         <input class="visually-hidden control-input" type="radio" name="product-group" checked>
                                                         <span class="control-mark"></span>
-                                                        <span>Гостиница</span>
+                                                        <span class="filter-name-item">Гостиница</span>
                                                     </label>
                                                 </li>
                                                 <li class="catalog-filter-item">
                                                     <label class="control">
                                                         <input class="visually-hidden control-input" type="radio" name="product-group">
                                                         <span class="control-mark"></span>
-                                                        <span>Мотель</span>
+                                                        <span class="filter-name-item">Мотель</span>
                                                     </label>
                                                 </li>
                                                 <li class="catalog-filter-item">
                                                     <label class="control">
                                                         <input class="visually-hidden control-input" type="radio" name="product-group">
                                                         <span class="control-mark"></span>
-                                                        <span>Апартаменты</span>
+                                                        <span class="filter-name-item">Апартаменты</span>
                                                     </label>
                                                 </li>
                                             </ul>
@@ -154,11 +154,11 @@
                                             </div>
                                         </fieldset>
                                       </div>
-                                      <form class="catalog-filter-button" action="https://echo.htmlacademy.ru/" method="get">
+                                      <div class="catalog-filter-button">
                                           <button class="button button-form" type="submit">Применить</button>
-                                          <button class="button-reset" type="submit">Сбросить</button>
-                                      </form>
-                                  </div>
+                                          <button class="button-reset" type="button">Сбросить</button>
+                                      </div>
+                                  </form>
                           </section>
                       </div>
                     </div>

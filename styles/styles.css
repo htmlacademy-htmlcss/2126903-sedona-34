@@ -350,9 +350,24 @@ body {
     text-align: center;
     background-image: url(../images/background-blure-mountans.png);
     background-repeat: no-repeat;
+    background-size: cover ;
     background-color: #3F5E72;
     width: 1200px;
     color: #fff;
+}
+
+.filter-box {
+    margin-right: 70px;
+}
+
+.filter-box-second {
+    margin-right: 178px;
+}
+
+.catalog-filter-button {
+    display: flex;
+    flex-direction: column;
+    margin-left: 62px;
 }
 
 .page-main-title {
@@ -584,20 +599,11 @@ body {
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
 }
 
-.catalog-product {
-}
-
 .catalog-filter-container {
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-between;
 }
 
-.catalog-filter-button {
-    display: flex;
-    flex-direction: column;
-    margin-left: 65px;
-
-}
 
 .filter-container{
     display: flex;
@@ -876,13 +882,6 @@ body {
     margin-right: 70px;
 }
 
-.filter-box {
-    margin-right: 70px;
-}
-
-.filter-box-second {
-    margin-right: 180px;
-}
 
 .catalog-filter-group-prise {
     width: 297px;
@@ -988,7 +987,7 @@ body {
 }
 
 .catalog-filter-title-prise {
-    margin-bottom: 32px;
+    margin-bottom: 34px;
 }
 
 .navigation-link-current::before {
@@ -1042,10 +1041,12 @@ body {
     position: relative;
     display: flex;
     margin-bottom: 28px;
+    border: none;
 }
 
 .range  {
     width: 296px;
+    border: none;
 }
 
 .range-scale {
@@ -1098,14 +1099,14 @@ body {
 
 .range-input-placeholder {
     position: absolute;
-    left: 115px;
+    left: 113px;
     top: 13px;
     color: #FFFFFF;
     opacity: 0.3;
 }
 .range-input-placeholder-right {
     position: absolute;
-    right: 24px;
+    right: 25px;
     top: 13px;
     color: #FFFFFF;
     opacity: 0.3;
@@ -1236,6 +1237,13 @@ body {
     margin-bottom: 15px;
 }
 
+.filter-name-item {
+    display: block;
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -1258,7 +1266,7 @@ body {
     background: #82B3D3;
     padding: 14px 30px;
     margin-bottom: 20px;
-    margin-top: 57px;
+    margin-top: 60px;
 }
 
 .button-form:hover {
